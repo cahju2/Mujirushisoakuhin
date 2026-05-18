@@ -4,7 +4,6 @@ function copyIP() {
     navigator.clipboard.writeText(ipText).then(() => {
         const toast = document.getElementById('toast');
         
-        // すでに表示されている場合の連続クリック対策
         toast.classList.remove('show');
         
         setTimeout(() => {

@@ -39,7 +39,7 @@ body {
     border-top-right-radius: 4px;
 }
 
-/* セクションナビゲーション */
+/* セクションナビゲーション（上部固定・overflowバグ対策済） */
 .wiki-nav {
     display: flex;
     background: #b9ca59; 
