@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無印SMP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="canvas">
+        <div class="header-text">
+            <div class="main-title">
+                <p>無印であり</p>
+                <p>粗悪品です</p>
+            </div>
+            <span class="copyright">INZW©</span>
+            
+            <p class="description">
+                みんなが見慣れた景色を、ほんの少しのアイデアで最先端のクリエイティブに変えてしまう粗悪なマルチプレイサーバー
+            </p>
+
+            <div class="links-wrapper">
+                <a href="wiki/" class="action-link">→ サーバールール / Wiki を見る</a>
+                <a href="https://discord.gg/66eZGrNJRh" target="_blank" class="action-link">→ 公式Discordサーバーに参加する</a>
+            </div>
+        </div>
+
+        <div class="ip-container">
+            <div class="ip-label">IP:</div>
+            <div class="ip-box-wrapper">
+                <span class="ip-address" id="ipText">muji-smp.example.com</span>
+                <button class="copy-btn" onclick="copyIP()">コピー</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-message" id="toast">コピーしました！</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

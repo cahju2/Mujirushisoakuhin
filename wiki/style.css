@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #b9ca59; 
+    color: #107837; 
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 20px;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+.wiki-container {
+    width: 100%;
+    max-width: 650px;
+    border: 2px solid #107837;
+    border-radius: 6px;
+    background: rgba(16, 120, 55, 0.02);
+    margin-bottom: 20px;
+}
+
+.wiki-header {
+    background-color: #107837;
+    color: #b9ca59;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* セクションナビゲーション */
+.wiki-nav {
+    display: flex;
+    background: #b9ca59; 
+    border-bottom: 2px solid #107837;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.wiki-nav a {
+    flex: 1;
+    text-align: center;
+    padding: 12px 10px;
+    color: #107837;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+    background: rgba(16, 120, 55, 0.1);
+}
+
+.wiki-nav a:not(:last-child) {
+    border-right: 1px solid #107837;
+}
+
+.wiki-nav a:hover {
+    background: rgba(16, 120, 55, 0.2);
+}
+
+.wiki-content {
+    padding: 25px;
+}
+
+.wiki-main-section {
+    margin-bottom: 40px;
+    scroll-margin-top: 60px;
+}
+
+.wiki-main-section:last-child {
+    margin-bottom: 0;
+}
+
+.section-caption {
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: #107837;
+    color: #b9ca59;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.rule-section {
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.rule-section:last-child {
+    margin-bottom: 0;
+}
+
+.rule-title {
+    font-size: 1.05rem;
+    font-weight: bold;
+    border-bottom: 1px solid #107837;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+}
+
+.rule-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    opacity: 0.9;
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.info-list li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+    color: #107837;
+}
+
+.info-list a {
+    color: #107837;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.back-to-top-wrapper {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.back-to-top-link {
+    color: #107837;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #107837;
+    padding-bottom: 2px;
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+
+.back-to-top-link:hover {
+    opacity: 0.6;
+}
