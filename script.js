@@ -1,7 +1,7 @@
-function copyIP() {
-    const ipText = document.getElementById('ipText').innerText;
+function copyText(elementId) {
+    const targetText = document.getElementById(elementId).innerText;
     
-    navigator.clipboard.writeText(ipText).then(() => {
+    navigator.clipboard.writeText(targetText).then(() => {
         const toast = document.getElementById('toast');
         
         toast.classList.remove('show');

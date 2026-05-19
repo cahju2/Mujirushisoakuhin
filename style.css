@@ -82,17 +82,26 @@ body {
 
 .ip-container {
     position: absolute;
-    top: 58%; 
+    top: 55%; 
     left: 10%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
+}
+
+.ip-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .ip-label {
-    font-size: clamp(3.5rem, 9vw, 5.5rem);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: 500;
     line-height: 1;
+    width: 70px;
 }
 
 .ip-box-wrapper {
@@ -103,13 +112,21 @@ body {
     padding: 5px 10px;
     background: transparent;
     width: fit-content;
+    max-width: 100%;
 }
 
 .ip-address {
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
     font-weight: bold;
     font-family: monospace;
     padding-right: 15px;
+    white-space: nowrap;
+}
+
+.port-label {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-weight: bold;
+    opacity: 0.8;
 }
 
 .copy-btn {
@@ -117,7 +134,7 @@ body {
     color: #b9ca59;
     border: none;
     padding: 4px 10px;
-    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    font-size: clamp(0.8rem, 1.8vw, 1rem);
     font-weight: bold;
     cursor: pointer;
     border-radius: 2px;
@@ -132,6 +149,8 @@ body {
     position: fixed;
     bottom: -60px;
     left: 5%;
+    right: 5%;
+    max-width: fit-content;
     background-color: #107837;
     color: #b9ca59;
     padding: 12px 24px;
@@ -145,4 +164,32 @@ body {
 
 .toast-message.show {
     transform: translateY(-90px);
+}
+
+@media (max-width: 520px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+    .canvas {
+        aspect-ratio: auto;
+        padding: 40px 24px;
+    }
+    .header-text, .ip-container {
+        position: static;
+        width: 100%;
+        left: auto;
+        top: auto;
+    }
+    .ip-container {
+        margin-top: 40px;
+    }
+    .ip-row {
+        gap: 8px;
+    }
+    .ip-box-wrapper {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
