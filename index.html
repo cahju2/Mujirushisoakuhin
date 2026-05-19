@@ -31,10 +31,21 @@
         </div>
 
         <div class="ip-container">
-            <div class="ip-label">IP:</div>
-            <div class="ip-box-wrapper">
-                <span class="ip-address" id="ipText">muji-smp.example.com</span>
-                <button class="copy-btn" onclick="copyIP()">コピー</button>
+            <div class="ip-row">
+                <div class="ip-label">Java:</div>
+                <div class="ip-box-wrapper">
+                    <span class="ip-address" id="javaIp">chinpo.hanyuu.lol</span>
+                    <button class="copy-btn" onclick="copyText('javaIp')">コピー</button>
+                </div>
+            </div>
+
+            <div class="ip-row">
+                <div class="ip-label">BE:</div>
+                <div class="ip-box-wrapper">
+                    <span class="ip-address" id="beIp">be.hanyuu.lol</span>
+                    <button class="copy-btn" onclick="copyText('beIp')">コピー</button>
+                </div>
+                <span class="port-label">Port: 19132</span>
             </div>
         </div>
     </div>
